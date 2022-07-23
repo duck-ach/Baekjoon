@@ -1,0 +1,21 @@
+package loop;
+
+import java.util.Scanner;
+
+public class CicleNumber {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String N = sc.next();
+		int A = Integer.parseInt(N);
+		
+		for(int i=0; i == A; i++) {
+			
+		}
+		
+		
+		
+
+	}
+
+}
