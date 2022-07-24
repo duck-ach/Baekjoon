@@ -1,0 +1,17 @@
+package array;
+
+import java.util.Scanner;
+
+public class CountNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int value = (sc.nextInt() * sc.nextInt() * sc.nextInt());
+		String Chastr = Integer.toString(value);
+		
+
+	}
+
+}
