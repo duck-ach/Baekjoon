@@ -1,0 +1,52 @@
+package array;
+
+import java.util.Scanner;
+
+public class Ex_StringBuilder {
+
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder();
+		sb.append(1);
+		sb.append(true);
+		sb.append('T');
+		sb.append(3.14);
+		sb.append("hello");
+		
+		
+		// String을 합치는 것
+				String alphabet1 = "";
+				long begin1 = System.nanoTime();
+				for(char ch='a'; ch<='z'; ch++) {
+					alphabet1 += ch;
+				}
+				long end1 = System.nanoTime();
+				System.out.println((end1 - begin1) + " " + alphabet1);
+				
+				// StringBuilder
+				StringBuilder sb2 = new StringBuilder();
+				long begin2 = System.nanoTime();
+				for(char ch='a'; ch<='z'; ch++) {
+					sb2.append(ch);
+				}
+				long end2 = System.nanoTime();
+				String alphabet2 = sb2.toString();
+				System.out.println((end2 - begin2) + " " + alphabet2);
+				
+				// 결론 : StringBuilder가 더 빠르다.
+
+				
+				
+		// 닭가슴살 가성비
+			Scanner sc = new Scanner(System.in);
+			System.out.print("가격을 입력하세요. >> ");
+			int price = sc.nextInt();
+			System.out.print("중량을 입력하세요. >> ");
+			int gram = sc.nextInt();
+			System.out.print("개수를 입력하세요. >> ");
+			int count = sc.nextInt();
+			
+			System.out.println("1개당 : " + price / (gram * count));
+			
+	}
+
+}
